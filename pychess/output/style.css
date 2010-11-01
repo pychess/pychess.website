@@ -190,7 +190,7 @@ body { background-color: white; }
   height: 160px;
   display: block;
   clear: both;
-  margin-left: 84px;
+  padding-left: 60px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
