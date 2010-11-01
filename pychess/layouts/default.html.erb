@@ -10,7 +10,10 @@
 		<div id="container">
 
 			<div id="header">
-				<a href="/"><img id="logo" src="/images/logo.png"/></a>
+				<div id="left_column"
+					<a href="/"><img id="logo" src="/images/logo.png"/></a>
+					<a href="/"><img id="pychess" src="/images/pychess.png"/></a>
+				</div>
 			</div>
 
       <div id="navbar">
@@ -24,29 +27,29 @@
 				<div class="left_divider">
 				</div>
 
-				<div class="<%= button_class_helper(/index/,@item) %>">
-          <a href="/index.html">About</a>
+				<div id="one" class="<%= button_class_helper(/about/,@item) %>">
+          <a href="/about">About & Screens</a>
 				</div>
 
 				<div class="bar_divider">
 				</div>
 
-				<div class="<%= button_class_helper(/screenshots/,@item) %>">
-          <a href="/screenshots">Screens</a>
-				</div>
-
-				<div class="bar_divider">
-				</div>
-
-				<div class="<%= button_class_helper(/download/,@item) %>">
+				<div id="two" class="<%= button_class_helper(/download/,@item) %>">
           <a href="/download">Download</a>
 				</div>
 
 				<div class="bar_divider">
 				</div>
 
-				<div class="<%= button_class_helper(/community/,@item) %>">
-          <a href="/community">Community</a>
+				<div id="three" class="<%= button_class_helper(/news/,@item) %>">
+          <a href="/news">News</a>
+				</div>
+
+				<div class="bar_divider">
+				</div>
+
+				<div id="four" class="<%= button_class_helper(/community/,@item) %>">
+          <a href="/community">You & PyChess</a>
 				</div>
 
 				<div class="bar_divider">
@@ -61,11 +64,38 @@
 			</div>
     </div>
 
-		<div id="content">
-			<%= yield %>
-    </div>
+		<%# Root url does not draw the borders (which comprising of a couple of shadows and a footer) and instead shows a front page %>
+		<% unless @item.identifier == '/' %>
 
-		<div id="footer">
-		</div>
+			<div id="content">
+				<%= yield %>
+			</div>
+
+			<div id="footer">
+			</div>
+
+		<% else %>
+
+			<div id="fp_top">
+				<h1>PyChess Staunton</h1>
+				<h1>plays chess better than you*</h1>
+			</div>
+
+			<div id="fp_middle">
+				<div id="fp_col_1">
+					<a href="/about"><img id="peek_box" src="/images/peek_box.png"/></a>
+				</div>
+
+				<div id="fp_col_2">
+					<a href="/download"><img id="download_box" src="/images/download_box.png"/></a>
+				</div>
+			</div>
+
+			<div id="fp_bottom">
+				<h2>*Or it will find someone who does</h2>
+			</div>
+
+		<% end %>
+
   </body>
 </html>
