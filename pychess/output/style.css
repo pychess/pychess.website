@@ -10,10 +10,19 @@
 * {
   margin: 0;
   padding: 0;
+  border: 0;
   color: #3d3d3d;
   font-size: 14px;
+  font-family: Verdana, Helvetica, Arial;
 }
-h1 { font-size: 22px; }
+h1 {
+  font-family: GraublauWeb, Verdana, Helvetica, Arial;
+  font-size: 3em;
+}
+h2 {
+  font-family: GraublauWeb, Verdana, Helvetica, Arial;
+  font-size: 1.5em;
+}
 h3 {
   font-size: 16px;
   color: #6e0000;
@@ -34,12 +43,20 @@ body { background-color: white; }
   height: 100px;
   z-index: 10;
 }
+#header #left_column { width: 265px; }
 #header #logo {
   border: none;
   display: block;
   position: relative;
   left: 22px;
   top: 30px;
+}
+#header #pychess {
+  border: none;
+  display: block;
+  position: relative;
+  left: 107px;
+  bottom: 63px;
 }
 .slice {
   background: transparent url(/images/bar_slice.png) repeat-x;
@@ -60,23 +77,25 @@ body { background-color: white; }
 }
 #navbar a {
   color: #ffffff;
-  font-size: 1.5em;
+  font-size: 1.25em;
   text-decoration: none;
-  line-height: 170%;
+  line-height: 180%;
 }
-#navbar #nav_button {
-  background: transparent url(/images/bar_slice.png) repeat-x;
-  float: left;
-  height: 38px;
-  width: 6px;
-  width: 120px;
+#navbar #one { width: 160px; }
+#navbar #two {
+  width: 80px;
+  width: 105px;
 }
+#navbar #three {
+  width: 80px;
+  width: 80px;
+}
+#navbar #four { width: 148px; }
 #navbar div.selected {
   background: transparent url(/images/bar_slice.png) repeat-x;
   float: left;
   height: 38px;
   width: 6px;
-  width: 120px;
   background: transparent url(/images/bar_slice_selected.png) repeat-x;
 }
 #navbar div.button {
@@ -84,14 +103,12 @@ body { background-color: white; }
   float: left;
   height: 38px;
   width: 6px;
-  width: 120px;
 }
 #navbar div.button:hover {
   background: transparent url(/images/bar_slice.png) repeat-x;
   float: left;
   height: 38px;
   width: 6px;
-  width: 120px;
   background: transparent url(/images/bar_slice_hover.png) repeat-x;
 }
 #navbar div.bar_divider {
@@ -113,7 +130,7 @@ body { background-color: white; }
   float: left;
   height: 38px;
   width: 6px;
-  width: 270px;
+  width: 257px;
 }
 #navbar div.left_round {
   background: transparent url(/images/bar_slice.png) repeat-x;
@@ -165,4 +182,52 @@ body { background-color: white; }
   margin-left: auto;
   height: 59px;
   width: 900px;
+}
+#fp_top {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 160px;
+  display: block;
+  clear: both;
+  margin-left: 84px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#fp_middle {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 250px;
+  display: block;
+  clear: both;
+}
+#fp_col_1 {
+  width: 50%;
+  float: left;
+}
+#fp_col_1 #peek_box {
+  position: relative;
+  top: 40px;
+  left: 125px;
+}
+#fp_col_2 {
+  width: 50%;
+  float: left;
+}
+#fp_col_2 #download_box {
+  position: relative;
+  bottom: 40px;
+  left: 36px;
+}
+#fp_bottom {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 60px;
+  display: block;
+  clear: both;
+  padding-left: 492px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
