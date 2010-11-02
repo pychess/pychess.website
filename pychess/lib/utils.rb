@@ -2,7 +2,6 @@
 
 def button_class_helper(button, item)
 	filename = item.attributes[:filename]
-
   if filename.match button then
 		return "selected"
 	else

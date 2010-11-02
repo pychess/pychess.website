@@ -81,6 +81,7 @@ body { background-color: white; }
   text-decoration: none;
   line-height: 180%;
 }
+#navbar #zero { width: 128px; }
 #navbar #one { width: 160px; }
 #navbar #two {
   width: 80px;
@@ -132,28 +133,19 @@ body { background-color: white; }
   width: 6px;
   width: 257px;
 }
-#navbar div.left_round {
+#navbar div#left.button {
   background: transparent url(/images/bar_slice.png) repeat-x;
   float: left;
   height: 38px;
   width: 6px;
-  background: transparent url(/images/bar_slice_left_round.png) no-repeat;
+  background: transparent url(/images/bar_slice_left.png) no-repeat;
 }
-#navbar div.left_regular {
+#navbar div#left.selected {
   background: transparent url(/images/bar_slice.png) repeat-x;
   float: left;
   height: 38px;
   width: 6px;
-  background: transparent url(/images/bar_slice_left_regular.png) repeat-x;
-  width: 128px;
-}
-#navbar div.left_divider {
-  background: transparent url(/images/bar_slice.png) repeat-x;
-  float: left;
-  height: 38px;
-  width: 6px;
-  background: transparent url(/images/bar_slice_left_divider.png) no-repeat;
-  width: 2px;
+  background: transparent url(/images/bar_slice_left_selected.png) no-repeat;
 }
 #navbar div.right {
   background: transparent url(/images/bar_slice.png) repeat-x;
