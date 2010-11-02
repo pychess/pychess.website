@@ -24,11 +24,11 @@ h2 {
   font-size: 1.5em;
 }
 h3 {
-  font-size: 16px;
-  color: #6e0000;
+  font-size: 1.2em;
+  color: #8e0a0a;
   margin-top: 5px;
   margin-bottom: 5px;
-  text-shadow: 1px 1px 1px #666666;
+  text-shadow: 1px 1px 1px #6374ab;
 }
 body { background-color: white; }
 .top {
@@ -72,7 +72,7 @@ body { background-color: white; }
   font-family: GraublauWeb, Verdana, Helvetica, Arial;
   font-weight: bold;
   text-align: center;
-  text-shadow: 2px 2px 2px #000000;
+  text-shadow: 2px 2px 2px #331010;
   top: -10px;
 }
 #navbar a {
@@ -82,16 +82,16 @@ body { background-color: white; }
   line-height: 180%;
 }
 #navbar #zero { width: 128px; }
-#navbar #one { width: 160px; }
+#navbar #one { width: 188px; }
 #navbar #two {
   width: 80px;
-  width: 105px;
+  width: 119px;
 }
 #navbar #three {
   width: 80px;
   width: 80px;
 }
-#navbar #four { width: 148px; }
+#navbar #four { width: 168px; }
 #navbar div.selected {
   background: transparent url(/images/bar_slice.png) repeat-x;
   float: left;
@@ -124,14 +124,14 @@ body { background-color: white; }
   position: relative;
   z-index: 10;
   left: 5px;
-  bottom: 34px;
+  bottom: 20px;
 }
 #navbar div.padding {
   background: transparent url(/images/bar_slice.png) repeat-x;
   float: left;
   height: 38px;
   width: 6px;
-  width: 257px;
+  width: 195px;
 }
 #navbar div#left.button {
   background: transparent url(/images/bar_slice.png) repeat-x;
@@ -219,7 +219,7 @@ body { background-color: white; }
   height: 60px;
   display: block;
   clear: both;
-  padding-left: 492px;
+  padding-left: 282px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
