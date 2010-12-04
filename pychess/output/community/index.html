@@ -1,74 +1,57 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html 
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="generator" content="nanoc 3.1.5">
     <title>PyChess - Get Involved</title>
     <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
-    <meta name="generator" content="nanoc 3.1.5">
+    <!--<script type="text/javascript" src="https://www.google.com/jsapi?key=ABQIAAAAjcXDak_wzCOwuLfPk9DGiBSrS0qGPgFuybFdOOQl6BddBSDoohSe7uHZpNXd9JtnU3y8CdfTX-xCaA" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $("#header a").hover(function() {
+        $("#home_but").addClass("hover");
+      }, function() {
+        $("#home_but").removeClass("hover");
+      });
+    });
+    </script>
   </head>
   <body>
-		<div id="container">
+    <div id="container">
+      
+      <!-- The slightly floating logo thingy in the upper left corner -->
+      <div id="header">
+        <a href="/" id="logo"><img src="/images/logo.png"/></a>
+        <a href="/" id="pychess"><img src="/images/pychess.png"/></a>
+      </div>
 
-			<div id="header">
-				<div id="left_column">
-					<a href="/"><img id="logo" src="/images/logo.png"/></a>
-					<a href="/"><img id="pychess" src="/images/pychess.png"/></a>
-				</div>
-			</div>
+      <ul id="navlist">
+        <li><a class="button" id="home_but"
+          href="/" title="To the Front Page">
+          <span>Home</span></a></li>
+        <li><a class="button"
+          href="/about" title="Everybody Loves Screenshots!">
+          <span>About & Screens</span></a></li>
+        <li><a class="button"
+          href="/download" title="Download Binaries and Sources">
+          <span>Download</span></a></li>
+        <li><a class="button"
+          href="/news" title="News Blog and Updates">
+          <span>News</span></a></li>
+        <li><a class="selected" id="last_but"
+          href="/community" title="The Community">
+          <span>You & PyChess</span></a></li>
+      </ul>
 
-      <div id="navbar">
+    
+    
 
-				<div id="left" class="button">
-				</div>
-				
-				<div id="zero" class="button">
-				</div>
-
-				<div class="bar_divider">
-				</div>
-
-				<div id="one" class="button">
-          <a href="/about">About & Screens</a>
-				</div>
-
-				<div class="bar_divider">
-				</div>
-
-				<div id="two" class="button">
-          <a href="/download">Download</a>
-				</div>
-
-				<div class="bar_divider">
-				</div>
-
-				<div id="three" class="button">
-          <a href="/news">News</a>
-				</div>
-
-				<div class="bar_divider">
-				</div>
-
-				<div id="four" class="selected">
-          <a href="/community">You & PyChess</a>
-				</div>
-
-				<div class="bar_divider">
-		      
-				</div>
-
-				<div class="padding">
-				</div>
-
-				<div class="right">
-				</div>		
-			</div>
-    </div>
-
-		
-		
-
-			<div id="content">
-				<h2>Get Involved</h2>
+      <div id="content">
+        <h2>Get Involved</h2>
 
 <h3/>Joining the project</h3>
 
@@ -98,12 +81,13 @@
 <a href="/images/pychess_uml.png"><img src="/images/uml_thumb.png"/></a>
 
 <p>The .dia file can be found in the source repository.</p>
-			</div>
+      </div>
 
-			<div id="footer">
-			</div>
+      <div id="footer">
+      </div>
 
-		
-
+    
+    
+    </div>
   </body>
 </html>
