@@ -33,6 +33,7 @@
   padding: 0;
   border: 0;
 }
+html { overflow-y: scroll; }
 h2, h3 {
   font-family: Graublau Web, Helvetica, Sans-Serif;
   color: #555753;
