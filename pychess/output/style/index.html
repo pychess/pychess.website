@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="generator" content="nanoc 3.1.5">
-    <title>PyChess - Get Involved</title>
+    <title>PyChess - </title>
     <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
     
     <script type="text/javascript">
@@ -61,7 +61,7 @@
         <li><a class="button"
           href="/news" title="News Blog and Updates">
           <span>News</span></a></li>
-        <li><a class="selected" id="last_but"
+        <li><a class="button" id="last_but"
           href="/community" title="The Community">
           <span>You & PyChess</span></a></li>
       </ul>
@@ -70,37 +70,167 @@
     
 
       <div id="content">
-        <h2>Get Involved</h2>
-<div class="columnbox">
-<h3/>Joining the project</h3>
+        @button_text: #FFF;
+@light_red:#B80505;
+@dark_red:#6E0000;
+@content_width: 900px;
+@button_width: 120px;
+@padding: 50px;
 
-<p>If you have found program errors, you should file a bug report in the menu on the left.</p>
+* {
+  margin: 0;
+  padding: 0;
+  color:#3D3D3D;
+	font-family:Verdana,Helvetica,Arial;
+	font-size:14px
+}
 
-<p>If you want to get involved in coding, documenting, testing, packing or any other project related task, you are extremely welcome to join the PyChess mailing list, <a href="http://groups.google.com/group/pychess-people">pychess-people</a>, which should be the place almost all discussion takes place. All development questions should go there.</p>
+h1 {
+  font-size: 22px; 
+}
 
-<p>Now get a copy of the latest development sources from <a href="http://code.google.com/p/pychess/source">http://code.google.com/p/pychess/source</a> To get write access to the tracker, send a mail to <a href="mailto:lobais@gmail.com">lobais@gmail.com</a><br /></font></p>
+h3 {
+  font-size: 16px; 
+  color: @dark_red;
+  margin-top: 5px;
+  margin-bottom: 5px; 
+  text-shadow:1px 1px 1px #666;
+}
 
-<h3>How development is usually done</h3>
+body {
+  background-color: white;
+}
 
-<p>PyChess uses a very open development structure. If you want to hack on a specific task in which you are interested, just let people know, so that they don't start hacking on the same thing, and they have a possibility to talk with you, if they are hacking on things which might interact with your project. If you don't have any specific idea, just ask if people need help with something, and if there are any tasks more prioritized than other.</p>
+.top {
+	width: @content_width;
+  margin-left: auto ;
+  margin-right: auto ;
+}
 
-<h3> Documentation</h3>
+#header {
+	.top;
+  height: 100px;
+	z-index: 10;
+	#logo {
+    border: none;
+		display: block;
+		position:relative;
+		left: 22px;
+		top: 30px;
+	}
+}
 
-<p>Documentation is something every project needs, but which few (younger) projects have enough of.</p>
 
-<p>In the svn there is a folder called doc, which contains API documents on the PyChess modules.</p>
+.slice {
+  background:transparent url(/images/bar_slice.png) repeat-x;
+  float:left;
+  height:38px;
+  width:6px;
+}
 
-<p>If you figure out how an documented piece of code works, feel absolutely free to add a few lines of documentation to help the next person in the same problem as you. :)</p>
+#navbar {
+	.top;
+  height: 23px;
+  text-align:center;
+  text-shadow:2px 2px 2px #000000;
+  top:-10px;
 
-<p>If you fail to figure it out, ask in the mailing list.</p>
+	a {
+    color: @button_text;
+		font-size: 1.5em;
+		text-decoration: none;
+		line-height:170%;
+	}
 
-<h3>UML for Greco 0.6</h3>
+  #nav_button {
+    .slice;
+    width:@button_width;
+  }
+
+  div.selected {
+    .slice;
+    width:@button_width;
+    background:transparent url(/images/bar_slice_selected.png) repeat-x;
+  }
+
+  div.button {
+    .slice;
+    width:@button_width; 
+  }
+
+  div.button:hover {
+    .slice;
+    width:@button_width; 
+    background:transparent url(/images/bar_slice_hover.png) repeat-x;
+  }
+
+	div.bar_divider {
+    .slice;
+		#green_pawn {
+			position: relative;
+      z-index: 10;
+      left: 5px;
+      bottom: 34px;
+  	}
+		background:transparent url(/images/bar_divider.png) no-repeat;
+		width: 2px;
+	}
+
+  div.padding {
+    .slice;
+    width:@content_width - ((@button_width * 4) + 128 + (6 * 2) + (2*5));
+	}
+
+	div.left_round {
+    .slice;
+    background:transparent url(/images/bar_slice_left_round.png) no-repeat;
+	}
+
+	div.left_regular {
+    .slice;
+    background:transparent url(/images/bar_slice_left_regular.png) repeat-x;
+    width: 128px;
+	}
+
+	div.left_divider {
+    .slice;
+    background:transparent url(/images/bar_slice_left_divider.png) no-repeat;
+    width: 2px;
+	}
+
+	div.right {
+    .slice;
+		background:transparent url(/images/bar_slice_right.png) no-repeat;
+	}
+}
+
+#content{
+  background:transparent url(/images/shadow_sides.png) repeat-y;
+  clear: both;
+  display: block;
 
 
-<a href="/images/pychess_uml.png"><img src="/images/uml_thumb.png"/></a>
+  padding-left: @padding;
+  padding-right: @padding;
+  padding-top: 10px;
+  padding-bottom: 80px;
+  width: @content_width - 2 * @padding;
+  margin-right: auto;
+  margin-left: auto;
+}
 
-<p>The .dia file can be found in the source repository.</p>
-</div>
+#footer{
+  background:transparent url(/images/shadow_footer.png) no-repeat;
+  clear: both;
+  display: block;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  height:59px;
+  width:@content_width;
+}
+
       </div>
 
       <div id="footer">
