@@ -25,14 +25,37 @@
     font-weight: bold;
     src: url(/fonts/GraublauWebBold.otf) format(truetype);
 }
+@font-face{
+    font-family: "Gentium";
+    src: local("Gentium Basic"), local("Gentium Basic Regular"),
+         local("GentiumBasic"), local("GentiumBasic-Regular"),
+         url(fonts/gentium-basic.ttf) format("truetype");
+}
+@font-face{
+    font-family: "Gentium";
+    font-style: italic;
+    src: local("Gentium Basic Italic"), local("GentiumBasic-Italic"),
+         url(fonts/gentium-basic-italic.ttf) format("truetype");
+}
+@font-face{
+    font-family: "Gentium";
+    font-weight: 700;
+    src: url(fonts/gentium-basic-bold.eot);
+    src: local("Gentium Basic Bold"), local("GentiumBasic-Bold"),
+         url(fonts/gentium-basic-bold.ttf) format("truetype");
+}
+@font-face{
+    font-family: "Gentium";
+    font-weight: 700;
+    font-style: italic;
+    src: local("Gentium Basic Bold Italic"), local("GentiumBasic-BoldItalic"),
+         url(fonts/gentium-basic-bold-italic.ttf) format("truetype");
+}
 
 * {
   margin: 0;
   padding: 0;
   border: 0;
-  /*color:#3D3D3D;
-    font-size:12px;
-    font-family:Graublau Web,Verdana,Helvetica,Arial;*/
 }
 
 h2, h3 {
@@ -56,6 +79,8 @@ h3 {
 body {
   background-color: white;
   margin-top:5px;
+  font-family: "Gentium Basic",Gentium,Palatino,Georgia,serif;
+  font-size: 15px;
 }
 
 #container {
@@ -65,7 +90,16 @@ body {
     margin: auto;
 }
 
+p {
+    margin-bottom:.3em;
+}
 
+.columnbox {
+    -moz-column-count: 2;
+    -moz-column-gap: 1em;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 1em;
+}
 
 #header {
   height: 70px;
