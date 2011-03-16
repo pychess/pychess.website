@@ -224,12 +224,12 @@ p { margin-bottom: 0.3em; }
   clear: both;
 }
 .feature_list li { margin-left: 15px; }
-.opportunity_list {
+.image_list {
   margin-top: 1em;
   list-style-type: none;
   clear: both;
 }
-.opportunity_list li {
+.image_list li {
   margin: 0 0 1em 0;
   display: block;
   -webkit-column-break-inside: avoid;
@@ -237,7 +237,7 @@ p { margin-bottom: 0.3em; }
   display: inline-block;
   clear: both;
 }
-.opportunity_list img {
+.image_list img {
   float: left;
   margin: 0 0.4em 0.1em 0;
 }
