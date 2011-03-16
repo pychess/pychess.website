@@ -63,6 +63,8 @@ p { margin-bottom: 0.3em; }
 .columnbox {
   -moz-column-count: 2;
   -moz-column-gap: 1em;
+  column-count: 2;
+  column-gap: 1em;
   -webkit-column-count: 2;
   -webkit-column-gap: 1em;
 }
@@ -222,3 +224,20 @@ p { margin-bottom: 0.3em; }
   clear: both;
 }
 .feature_list li { margin-left: 15px; }
+.opportunity_list {
+  margin-top: 1em;
+  list-style-type: none;
+  clear: both;
+}
+.opportunity_list li {
+  margin: 0 0 1em 0;
+  display: block;
+  -webkit-column-break-inside: avoid;
+  break-inside: avoid-column;
+  display: inline-block;
+  clear: both;
+}
+.opportunity_list img {
+  float: left;
+  margin: 0 0.4em 0.1em 0;
+}
