@@ -3,3 +3,8 @@ syntax: glob
 
 *.swp
 tmp
+*~
+
+pychess/crash.log
+pychess/tmp
+
