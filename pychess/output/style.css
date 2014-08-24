@@ -36,19 +36,26 @@
 html {
   overflow-y: scroll;
 }
-h2,
-h3 {
+h1 {
   font-family: Graublau Web, Helvetica, Sans-Serif;
   color: #555753;
   font-weight: normal;
   font-size: 60px;
   line-height: 1.3em;
 }
-h2 .keyword {
+h1 .keyword {
   color: #cc0000;
 }
+h2,
 h3 {
-  font-size: 24.5px;
+  font-family: Graublau Web, Helvetica, Sans-Serif;
+  color: #555753;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 1.3em;
+}
+h3 {
+  font-size: 20.5px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -219,7 +226,6 @@ pre {
 }
 #fp_col_1 {
   width: 311px;
-  float: left;
   display: block;
   background: url(/images/peek_box.png);
   height: 154px;
@@ -269,6 +275,12 @@ pre {
 }
 .feature_list li {
   margin-left: 15px;
+}
+.download_list {
+  clear: both;
+}
+.download_list li {
+  margin-left: 12px;
 }
 .image_list {
   margin-top: 1em;
