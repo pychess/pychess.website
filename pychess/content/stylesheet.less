@@ -60,7 +60,7 @@
 
 html { overflow-y: scroll; }
 
-h2, h3 {
+h1 {
     font-family: Graublau Web, Helvetica, Sans-Serif;
     color: @aluminium5;
     font-weight: normal;
@@ -68,12 +68,20 @@ h2, h3 {
     line-height: 1.3em;
 }
 
-h2 .keyword {
+h1 .keyword {
     color: @scarlet_red2;
 }
 
+h2, h3 {
+    font-family: Graublau Web, Helvetica, Sans-Serif;
+    color: @aluminium5;
+    font-weight: normal;
+    font-size: 40px; 
+    line-height: 1.3em;
+}
+
 h3 {
-  font-size: 24.5px; 
+  font-size: 20.5px; 
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -306,6 +314,11 @@ pre {
 .feature_list {
   li { margin-left: 15px; }
   padding-top: -20px;
+  clear: both;
+}
+
+.download_list {
+  li { margin-left: 12px; }
   clear: both;
 }
 
