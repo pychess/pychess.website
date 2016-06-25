@@ -3,5 +3,5 @@
 #git commit
 #git push
 nanoc compile
-scp -r output/* pychess@pychess.org:html
+scp -oHostKeyAlgorithms=+ssh-dss -r output/* pychess@pychess.org:html
 
