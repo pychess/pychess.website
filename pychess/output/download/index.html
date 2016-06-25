@@ -1,4 +1,4 @@
-<!DOCTYPE html 
+<!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en">
@@ -7,16 +7,16 @@
     <meta name="generator" content="nanoc 3.1.5">
     <title>PyChess - download</title>
     <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
-    
+
     <script type="text/javascript">
     /* It would be easier, but overkill, to use jquery here.
        All we want to do - for now anyway - is to enable to hover look on the
        home_button when the mouse is over the logo. */
     function addClass(ele,cls) {
-    	ele.setAttribute("class", ele.getAttribute("class")+" "+cls);
+        ele.setAttribute("class", ele.getAttribute("class")+" "+cls);
     } function removeClass(ele,cls) {
-    	var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)');
-    	ele.setAttribute("class", ele.className.replace(reg,""));
+        var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)');
+        ele.setAttribute("class", ele.className.replace(reg,""));
     } function remoteHover(src, dst) {
       src.onmouseover = (function() {addClass(dst, "hover");});
       src.onmouseout = (function() {removeClass(dst, "hover");});
@@ -26,7 +26,7 @@
       remoteHover(document.getElementById("pychess"), document.getElementById("home_but"));
     });
     </script>
-    
+
     <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-722001-3']);
@@ -37,11 +37,11 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
     </script>
-    
+
   </head>
   <body>
     <div id="container">
-      
+
       <!-- The slightly floating logo thingy in the upper left corner -->
       <div id="header">
         <a href="/" id="logo"><img src="/images/logo.png"/></a>
@@ -66,11 +66,11 @@
           <span>You & PyChess</span></a></li>
       </ul>
 
-    
-    
+
+
 
       <div id="content">
-        
+
 <h2>Download PyChess</h2>
 <div class="columnbox">
 <p>PyChess is available in a number of different formats. You can get it from <a href="https://github.com/pychess/pychess">source</a>, from the <a href="#downloads">package list</a> below (the recommended method these days, as most distributions are slow to update their pychess packages), or from your distribution's repository. For more information, check out <a href="https://github.com/pychess/pychess/wiki/HowToInstall">HowToInstall</a> on the <a href="https://github.com/pychess/pychess/wiki">wiki</a>.</p>
@@ -109,6 +109,18 @@
 
 <div id="downloads" class="download_list">
 <h3>Package List</h3>
+<h4>0.12.4 Anderssen</h4>
+    <list>
+        <li><a href="http://www.pychess.org/download/pychess-0.12.4.tar.gz">pychess-0.12.4.tar.gz</a></li>
+        <li><a href="http://www.pychess.org/download/pychess-0.12.4-1.py27.noarch.rpm">pychess-0.12.4-1.py27.noarch.rpm</a></li>
+        <li><a href="http://www.pychess.org/download/pychess-0.12.4-1.py34.noarch.rpm">pychess-0.12.4-1.py34.noarch.rpm</a></li>
+        <li><a href="http://www.pychess.org/download/pychess-0.12.4-1.py27.src.rpm">pychess-0.12.4-1.py27.src.rpm</a></li>
+        <li><a href="http://www.pychess.org/download/pychess-0.12.4-1.py34.src.rpm">pychess-0.12.4-1.py34.src.rpm</a></li>
+        <li><a href="http://www.pychess.org/download/pychess-0.12.4-1.py35.src.rpm">pychess-0.12.4-1.py35.src.rpm</a></li>
+        <li><a href="http://www.pychess.org/download/pychess_0.12.4-1_all.deb">pychess_0.12.4-1_all.deb</a></li>
+        <li><a href="http://www.pychess.org/download/python3-pychess_0.12.4-1_all.deb">python3-pychess_0.12.4-1_all.deb</a></li>
+        <li><a href="http://www.pychess.org/download/pychess-0.12.4-win32.msi">pychess-0.12.4-win32.msi</a></li>
+    </list>
 <h4>0.12.3 Anderssen</h4>
     <list>
         <li><a href="http://www.pychess.org/download/pychess-0.12.3.tar.gz">pychess-0.12.3.tar.gz</a></li>
@@ -165,8 +177,8 @@
 
       </div>
 
-    
-    
+
+
     </div>
   </body>
 </html>

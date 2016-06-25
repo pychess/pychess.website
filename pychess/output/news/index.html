@@ -1,4 +1,4 @@
-<!DOCTYPE html 
+<!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en">
@@ -7,16 +7,16 @@
     <meta name="generator" content="nanoc 3.1.5">
     <title>PyChess - news</title>
     <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
-    
+
     <script type="text/javascript">
     /* It would be easier, but overkill, to use jquery here.
        All we want to do - for now anyway - is to enable to hover look on the
        home_button when the mouse is over the logo. */
     function addClass(ele,cls) {
-    	ele.setAttribute("class", ele.getAttribute("class")+" "+cls);
+        ele.setAttribute("class", ele.getAttribute("class")+" "+cls);
     } function removeClass(ele,cls) {
-    	var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)');
-    	ele.setAttribute("class", ele.className.replace(reg,""));
+        var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)');
+        ele.setAttribute("class", ele.className.replace(reg,""));
     } function remoteHover(src, dst) {
       src.onmouseover = (function() {addClass(dst, "hover");});
       src.onmouseout = (function() {removeClass(dst, "hover");});
@@ -26,7 +26,7 @@
       remoteHover(document.getElementById("pychess"), document.getElementById("home_but"));
     });
     </script>
-    
+
     <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-722001-3']);
@@ -37,11 +37,11 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
     </script>
-    
+
   </head>
   <body>
     <div id="container">
-      
+
       <!-- The slightly floating logo thingy in the upper left corner -->
       <div id="header">
         <a href="/" id="logo"><img src="/images/logo.png"/></a>
@@ -66,15 +66,42 @@
           <span>You & PyChess</span></a></li>
       </ul>
 
-    
-    
+
+
 
       <div id="content">
-        
+
 <h2>News</h2>
 
 <img style="float:left; display:inline-box; margin: .5em 1em 2em; 0" src="/images/pointing.png" /></br>
 <div>
+
+<h3>PyChess 0.12.4 Anderssen released</h3>
+<p>2016/06/25: PyChess Anderssen 0.12.4 released</p>
+<p>We're pleased to announce, that a new PyChess Anderssen 0.12.4 has been made available. It's minor feature and bugfix release.</p>
+<p><ul>
+<li>Personalize welcome pychess window</li>
+<li>Filter buttons on players/games tabs </li>
+<li>Right click menu on FICS players/games tabs</li>
+<li>Command line completion in FICS console</li>
+<li>Make showing FICS game numbers on game tabs configurable</li>
+<li>Add time to messages in console</li>
+<li>Playing a perfect endgame</li>
+
+<li>#1360 Can't type IP to FICS login dialog</li>
+<li>#1354 Segfault on second match</li>
+<li>#1353 Annotation panel broken</li>
+<li>#1352 Several FICS player rating is 0 on games tab but not 0 in tooltip</li>
+<li>#1350 DnD with more than one .pgn error</li>
+<li>#1348 "Offer rematch" button not working</li>
+<li>#1347 Small formatting issue in draw message</li>
+<li>#1346 Dialogs don't have title</li>
+<li>#1334 Regression Unable to whisper during observed game</li>
+<li>#1333 Clocks going crazy</li>
+<li>#1328 Moving in game with arrow keys doesn't work with Python3</li>
+</ul></p>
+<p>Download: <a href="http://www.pychess.org/download/pychess-0.12.4.tar.gz">Tarball</a> • <a href="http://www.pychess.org/download/pychess-0.12.4-1.py27.noarch.rpm">Rpm-py2.7</a> • <a href="http://www.pychess.org/download/pychess-0.12.4-1.py34.noarch.rpm">Rpm-py3.4</a> • <a href="http://www.pychess.org/download/pychess-0.12.4-1.py35.noarch.rpm">Rpm-py3.5</a> • <a href="http://www.pychess.org/download/pychess_0.12.4-1_all.deb">Python2-Deb</a> • <a href="http://www.pychess.org/download/python3-pychess_0.12.4-1_all.deb">Python3-Deb</a> • <a href="http://www.pychess.org/download/pychess-0.12.4-win32.msi">Win32-msi</a>
+</p><p> - The PyChess Team</p>
 
 <h3>PyChess 0.12.3 Anderssen released</h3>
 <p>2016/02/25: PyChess Anderssen 0.12.3 released</p>
@@ -300,8 +327,8 @@ You have reached the end of our news list. For news older than 2011, check <a hr
 
       </div>
 
-    
-    
+
+
     </div>
   </body>
 </html>
