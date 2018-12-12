@@ -298,4 +298,6 @@ pre {
 .image_list img {
   float: left;
   margin: 0 .4em .1em 0;
+  width: 64px;
+  height: 64px;
 }
